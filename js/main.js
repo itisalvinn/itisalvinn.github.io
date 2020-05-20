@@ -13,18 +13,17 @@ TxtRotate.prototype.tick = function() {
   var i = this.loopNum % this.toRotate.length;
   var fullTxt = this.toRotate[i];
 
-  // change case to {highlight and remove}
-  // need a better way tho ...
+  // change back to deleting letters -- just up the rate 
   if (this.isDeleting) {
-    this.el.innerHTML = '<span class="wrap" style="background-color: #9E9797; color:#414141;">'+this.txt+'</span>';
-    this.txt = '';
+    this.txt = fullTxt.substring(0, this.txt.length - 1);
   } else {
     this.txt = fullTxt.substring(0, this.txt.length + 1);
-    this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
   }
 
+  this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
   var that = this;
-  var delta = 300 - Math.random() * 100;
+  var delta = 250 - Math.random() * 100;
 
   if (this.isDeleting) { delta /= 2; }
 
