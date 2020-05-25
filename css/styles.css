@@ -1,4 +1,4 @@
-body{
+body*{
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .container{
@@ -38,48 +38,62 @@ section{
 }
 .card{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
-    padding: 16px;
     text-align: center;
-    background-color: #A9A9A9;
+    background-color: #C3CAD9;
+    justify-content: center;
+    max-width: 250px;
+    margin: 15px;
+    align-items: center;
+    width: 50vw;
 }
 .card:hover{
-    transform: scale(1.05);
-    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+    transform: scale(1.03);
+    box-shadow: 0 20px 2px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+    overflow: hidden;
+}
+.cards {
+    display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	-ms-flex-wrap: wrap;
+	-ms-flex-pack: center;
+	-webkit-box-pack: center;
 }
 .card_image{
-    height: 160px;
-    width: 160px;
-    border-radius: 50%;
-    margin-top: 20px;
+    height: 230px;
+    width: 250px;
+    border-bottom: 5px red;
 }
-h1 {
+h1{
   font-size: 5em;
   display: block;
   color: white;
   font-weight: 300;
 }
-h2 {
+h2{
     font-size: 2em;
     display: block;
     color: white;
     font-weight: 300;
 }
-h3 {
+h3{
     font-size: 2em;
     display: block;
     font-weight: 300;
 }
-p {
+p{
   font-size: 2em;
   font-weight: 500;
   color: #C3CAD9;
 }
-a {
+a{
     color: #C3CAD9;
     font-size: 100px;
     font-weight: 500;
 }
-a:hover {
+a:hover{
     color: #ffffff;
     text-decoration: none;
 }
@@ -89,7 +103,20 @@ a.proj-card:hover{
     text-decoration: none;
     font-size: inherit;
 }
-
+.btn {
+    margin: 15px 15px 0px;
+    background: none;
+    border: none;
+    color: #BFC0C0;
+    cursor: pointer;
+    text-decoration: none;
+    line-height: 1.5;
+    font: 700 1.2rem 'Roboto Slab', sans-serif;
+    letter-spacing: 0.05rem;
+}
+.btn:hover{
+    
+}
 @media screen and (max-width: 600px) {
     .column {
       width: 100%;
