@@ -63,8 +63,8 @@ section{
 	-webkit-box-pack: center;
 }
 .card_image{
-    height: 230px;
-    width: 250px;
+    height: 180px;
+    width: 100%;
 }
 h1{
   font-size: 5em;
