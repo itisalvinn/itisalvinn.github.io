@@ -1,3 +1,3 @@
 
 ## personal website for this and that
- TODO: fix projects page, add some place holders and back button
+ TODO: update styling, fix projects page, add some place holders and back button
