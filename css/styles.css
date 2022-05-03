@@ -16,7 +16,7 @@ section{
     max-width: none;
     background-color: #000000;
     height: 100vh;
-    background-image: url('../assets/black_bg.png');
+    background-image: url('../assets/black_bg.png'); /* update background image */
 }
 .home-content{
     display: table-cell;
