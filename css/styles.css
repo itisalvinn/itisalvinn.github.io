@@ -136,8 +136,8 @@ a.proj-card:hover{
     height: 360%;
     width: 120%;
     background: #C3CAD9;
-    -webkit-transition: all .5s ease-in-out;
-    transition: all .4s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
     -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
     transform: translateX(-98%) translateY(-25%) rotate(78deg);
 }
