@@ -1,13 +1,24 @@
 body*{
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-.container{
+#home{
     width: 100%;
-    max-width: 600px;
-    padding: 20px;
-    margin: 0 auto;
+    padding-top: 10px;
+    padding: 0 25%;
+    display: table;
+    margin: 0;
+    background-color: #000000;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-image: url('../assets/background1.png');
 }
-section{
+.home-content{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+#proj{
     width: 100%;
     padding-top: 10px;
     padding: 0 25%;
@@ -15,13 +26,9 @@ section{
     margin: 0;
     max-width: none;
     background-color: #000000;
+    background-repeat: no-repeat;
     height: 100vh;
-    background-image: url('../assets/black_bg.png'); /* update background image */
-}
-.home-content{
-    display: table-cell;
-    text-align: center;
-    vertical-align: middle;
+    background-image: url('../assets/wood_fiber_no_brush.png');
 }
 .column{
     float: left;
@@ -40,7 +47,8 @@ section{
 .card{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
     text-align: center;
-    background-color: #C3CAD9;
+    flex: 1 0 21%;
+    background-color: #9e9c9c;
     justify-content: center;
     max-width: 250px;
     margin: 15px;
@@ -71,17 +79,6 @@ h1{
   display: block;
   color: white;
   font-weight: 300;
-}
-h2{
-    font-size: 2em;
-    display: block;
-    color: white;
-    font-weight: 300;
-}
-h3{
-    font-size: 2em;
-    display: block;
-    font-weight: 300;
 }
 p{
   font-size: 2em;
@@ -145,6 +142,7 @@ a.proj-card:hover{
     -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
     transform: translateX(-9%) translateY(-25%) rotate(45deg);
   }
+
 @media screen and (max-width: 600px) {
     .column {
       width: 100%;
