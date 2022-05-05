@@ -70,7 +70,7 @@ body*{
 	-ms-flex-pack: center;
 	-webkit-box-pack: center;
 }
-.card_image{
+.cardImage{
     height: 180px;
     width: 100%;
 }
